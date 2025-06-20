@@ -1,3 +1,8 @@
+@use './base/reset.scss' as *;
+@use './base/utilities.scss' as *;
+@use './base/variables.scss' as *;
+@use '../components/Hero/Hero.scss';
+
 @font-face {
   font-family: 'Ubuntu';
   src: url('@/assets/fonts/Ubuntu-Medium.ttf') format('ttf'),
@@ -13,9 +18,6 @@
   font-weight: 700; 
   font-display: swap;
 }
-
-@import 'base/reset';
-@import 'base/utilities';
 
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -45,5 +47,3 @@ a {
     text-decoration: underline;
   }
 }
-
-@import '../components/Hero/Hero.scss';

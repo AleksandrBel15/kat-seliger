@@ -1,9 +1,8 @@
 import './Hero.scss';
 
-
 export default class Hero {
     constructor() {
-        this.render();
+        this.element = this.render();
     }
 
     render() {
@@ -18,7 +17,7 @@ export default class Hero {
             <span class="hero__scroll-arrow"></span>
         </button>
         `;
-        document.body.prepend(section);
+        return section;
     }
 
     addEventListeners() {
