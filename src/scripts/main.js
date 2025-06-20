@@ -1,2 +1,4 @@
-import Header from '../components/Header/Header.js';
-new Header();
+import '../styles/main.scss';
+
+import Hero from '../components/Hero/Hero.js';
+new Hero();

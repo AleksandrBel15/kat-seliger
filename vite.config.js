@@ -9,5 +9,9 @@ export default defineConfig({
     },
     server: {
         open: true // Автоматически открывать браузер
+    },
+    css: {
+        devSourcemap: true, // Для отладки
+        minify: true       // Минификация при сборке
     }
 })

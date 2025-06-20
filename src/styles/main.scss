@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('@/assets/fonts/Ubuntu-Medium.ttf') format('ttf'),
+       url('@/assets/fonts/Ubuntu-MediumItalic.ttf') format('ttf');
+  font-weight: 500; 
+  font-display: swap; // Чтобы текст не "прыгал" при загрузке
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('@/assets/fonts/Ubuntu-Bold.ttf') format('ttf'),
+       url('@/assets/fonts/Ubuntu-BoldItalic.ttf') format('ttf');
+  font-weight: 700; 
+  font-display: swap;
+}
+
+@import 'base/reset';
+@import 'base/utilities';
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #2c3e50;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@import '../components/Hero/Hero.scss';
