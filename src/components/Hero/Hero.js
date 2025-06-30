@@ -6,9 +6,9 @@ export default class Hero {
     }
 
     render() {
-        const section = document.createElement('section');
-        section.className = 'hero';
-        section.innerHTML = `
+        const sectionHero = document.createElement('section');
+        sectionHero.className = 'hero';
+        sectionHero.innerHTML = `
             <div class = "hero__content">
                 <h1>Клуб активного туризма <br> Селигер</h1>
                 <p class="hero__subtitle">Присоединяйтесь, мы вам рады!</p>
@@ -20,7 +20,7 @@ export default class Hero {
                 </svg>
             </button>
         `;
-        return section;
+        return sectionHero;
     }
 
     addEventListeners() {

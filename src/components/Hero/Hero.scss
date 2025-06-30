@@ -29,7 +29,8 @@
   margin: 10px;
 
   & h1 {
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: 600;
   }
 
   & .hero__subtitle {
@@ -46,7 +47,7 @@
   transform: translateX(-50%);
   cursor: pointer;
 
-  &:focus {
+  &:focus-visible {
     outline: 2px solid white;
     outline-offset: 3px;
   }
