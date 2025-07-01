@@ -7,24 +7,19 @@
 //   outline: 1px solid rgb(255, 0, 0);
 // }
 
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('@/assets/fonts/Ubuntu-Medium.ttf') format('ttf'),
-       url('@/assets/fonts/Ubuntu-MediumItalic.ttf') format('ttf');
-  font-weight: 500; 
-  font-display: swap; // Чтобы текст не "прыгал" при загрузке
+.ubuntu-medium {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('@/assets/fonts/Ubuntu-Bold.ttf') format('ttf'),
-       url('@/assets/fonts/Ubuntu-BoldItalic.ttf') format('ttf');
-  font-weight: 700; 
-  font-display: swap;
+.ubuntu-medium-italic {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
 }
 
-body {
-  font-family: 'Ubuntu', Arial, sans-serif;
+html {
+  scroll-behavior: smooth;
 }
-
 
