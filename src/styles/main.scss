@@ -29,8 +29,7 @@ body{
 
 body::before {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-      url("../assets/images/mainImage.webp") no-repeat center center;
-    background-size: cover;
+      url("../assets/images/mainImage.webp") no-repeat center center / cover;
     content: ' ';
     height: 100%;
     left: 0;
@@ -41,3 +40,9 @@ body::before {
     z-index: -1;
 }
 
+@media (max-width: 375px) {
+  body::before {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url("../assets/images/mainImage-mobile.webp") no-repeat center center;
+  }
+}
