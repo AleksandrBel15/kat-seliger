@@ -23,3 +23,21 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+  position: relative;
+}
+
+body::before {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+      url("../assets/images/mainImage.webp") no-repeat center center;
+    background-size: cover;
+    content: ' ';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    will-change: transform;
+    z-index: -1;
+}
+

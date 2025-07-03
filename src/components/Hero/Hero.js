@@ -9,7 +9,7 @@ export default class Hero {
         const sectionHero = document.createElement('section');
         sectionHero.className = 'hero';
         sectionHero.innerHTML = `
-            <div class = "hero__content">
+            <div class = "hero__content text-center">
                 <h1 class="ubuntu-medium">Клуб активного туризма <br> Селигер</h1>
                 <p class="hero__subtitle ubuntu-medium">Присоединяйтесь, мы вам рады!</p>
             </div>
