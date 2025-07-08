@@ -8,7 +8,6 @@ export default class About {
     render() {
         const sectionAbout = document.createElement('section');
         sectionAbout.className = 'about';
-        sectionAbout.id = 'about';
         sectionAbout.innerHTML = `
             <h2 class="about__title ubuntu-medium">О нас</h2>
             <div class="about__cards flex-center ubuntu-medium">

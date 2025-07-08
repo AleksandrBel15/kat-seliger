@@ -30,7 +30,7 @@ export default class Hero {
         button.addEventListener('click', this.handleScrollClick);
     }
 
-    handleScrollClick = () => { // Стрелочная функция для контекста
+    handleScrollClick = () => {
         window.scrollBy({
             top: window.innerHeight * 0.8,
             behavior: 'smooth'
