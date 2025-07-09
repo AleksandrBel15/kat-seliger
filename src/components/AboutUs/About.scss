@@ -1,9 +1,7 @@
 @use "../../styles/base/reset";
 
 .about {
-  display: flex;
   flex-direction: column;
-  align-items: center;
   height: 100vh;
   width: 100%;
   gap: 20px;
@@ -100,12 +98,12 @@
 
 @media (min-width: 1441px) {
   .about__title {
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 40px;
   }
 
   .about__card {
     width: 500px;
-    font-size: 40px;
+    font-size: 35px;
   }
 }

@@ -2,12 +2,13 @@ import './About.scss';
 
 export default class About {
     constructor() {
-        this.element = this.render();
+        this.element = this.#render();
     }
 
-    render() {
+    #render() {
         const sectionAbout = document.createElement('section');
         sectionAbout.className = 'about';
+        sectionAbout.classList.add('flex-center');
         sectionAbout.innerHTML = `
             <h2 class="about__title ubuntu-medium">О нас</h2>
             <div class="about__cards flex-center ubuntu-medium">
