@@ -2,16 +2,18 @@ import './Hero.scss';
 
 export default class Hero {
     constructor() {
-        this.element = this.render();
-    }
+        this.element = this.#render();
+        this.#event();
+    };
 
-    render() {
+    #render() {
         const sectionHero = document.createElement('section');
         sectionHero.className = 'hero';
+        sectionHero.classList.add('flex-center');
         sectionHero.innerHTML = `
-            <div class = "hero__content text-center">
+            <div class = "hero__content text-center flex-center">
                 <h1 class="ubuntu-medium">Клуб активного туризма <br> Селигер</h1>
-                <p class="hero__subtitle ubuntu-medium">Присоединяйтесь, мы вам рады!</p>
+                <p class="hero__subtitle">Присоединяйтесь, мы вам рады!</p>
             </div>
         
             <button class="hero__scroll-down" aria-label="Прокрутить вниз">
@@ -23,14 +25,14 @@ export default class Hero {
             </button>
         `;
         return sectionHero;
-    }
+    };
 
-    addEventListeners() {
-        const button = document.querySelector('.hero__scroll-down');
-        button.addEventListener('click', this.handleScrollClick);
-    }
+    #event() {
+        const button = this.element.querySelector('.hero__scroll-down');
+        button.addEventListener('click', this.#handleScrollClick);
+    };
 
-    handleScrollClick = () => {
+    #handleScrollClick = () => {
         window.scrollBy({
             top: window.innerHeight * 0.8,
             behavior: 'smooth'

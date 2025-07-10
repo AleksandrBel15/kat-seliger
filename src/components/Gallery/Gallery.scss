@@ -18,22 +18,24 @@ h2 {
 .imageWrapper {
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 25px;
     gap: 20px;
 }
 
 .gallery__photo {
     max-height: 100%;
-    width: 50%;
+    width: 70%;
     border-radius: 25px;
     overflow: hidden;
 }
 
+.gallery__photo img {
+    width: 100%;
+    height: 100%;
+}
+
 .gallery__button {
-    height: 25px;
+    height: 30px;
     overflow: hidden;
     border: none;
     cursor: pointer;
@@ -45,4 +47,11 @@ h2 {
 
 .right-button {
     rotate: -90deg;
+}
+
+@media (max-width: 375px) {
+    .imageWrapper {
+        gap: 0px;
+        justify-content: space-between;
+    }
 }
