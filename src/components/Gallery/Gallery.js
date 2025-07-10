@@ -4,11 +4,14 @@ export default class Gallery {
     #num = 1;
     #maxCount = 25;
     #imgEl = null;
+    #isPressed = false;
+    #intervalId = null;
 
     constructor() {
         this.element = this.#render();
         this.#imgEl = this.element.querySelector('#gallery__image');
         this.#setupEvents();
+        this.#animation();
     };
 
     #render() {
@@ -39,7 +42,7 @@ export default class Gallery {
     #updateImage() {
         this.#imgEl.src = `./../../assets/galleryImages/photo${this.#num}.webp`;
         this.#imgEl.alt = `Изображение ${this.#num}`;
-    }
+    };
 
     #handleNextClick() {
         this.#num++;
@@ -47,7 +50,7 @@ export default class Gallery {
         if (this.#num > this.#maxCount) this.#num = 1;
 
         this.#updateImage();
-    }
+    };
 
     #handlePrevClick() {
         this.#num--;
@@ -55,16 +58,61 @@ export default class Gallery {
         if (this.#num < 1) this.#num = this.#maxCount;
 
         this.#updateImage();
-    }
+    };
+
+    #restartAnimation() {
+        if (this.#intervalId) clearInterval(this.#intervalId);
+        this.#isPressed = false;
+        this.#animation();
+    };
+
+    #clearExistingInterval() {
+        if (this.#intervalId) {
+            clearInterval(this.#intervalId);
+            this.#intervalId = null;
+        };
+    };
+
+    #animation() {
+        this.#intervalId = setInterval(() => {
+            if (this.#isPressed) {
+                this.#clearExistingInterval();
+                return;
+            };
+            this.#handleNextClick();
+        }, 2000);
+    };
+
+    #handleInteraction(handler) {
+        handler();
+        this.#isPressed = true;
+        this.#clearExistingInterval();
+        setTimeout(() => this.#restartAnimation(), 5000);
+    };
+
+    #clickHandling(click) {
+        if (click === 'prev') {
+            this.#handleInteraction(this.#handlePrevClick.bind(this));
+        };
+        if (click === 'next') {
+            this.#handleInteraction(this.#handleNextClick.bind(this));
+        };
+    };
 
     #setupEvents() {
         const leftBtn = this.element.querySelector('#left-button');
         const rightBtn = this.element.querySelector('#right-button');
-        leftBtn.addEventListener('click', this.#handlePrevClick.bind(this));
-        rightBtn.addEventListener('click', this.#handleNextClick.bind(this));
+
+        leftBtn.addEventListener('click', () => this.#clickHandling('prev'));
+        rightBtn.addEventListener('click', () => this.#clickHandling('next'));
+
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') this.#handlePrevClick();
-            if (e.key === 'ArrowRight') this.#handleNextClick();
+            if (e.key === 'ArrowLeft') {
+                this.#clickHandling('prev');
+            };
+            if (e.key === 'ArrowRight') {
+                this.#clickHandling('next');
+            };
         });
     }
 }
