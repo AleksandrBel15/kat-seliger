@@ -23,7 +23,7 @@
 
   & .hero__subtitle {
     font-size: 25px;
-    font-family: 'Ubuntu', Arial, sans-serif;
+    font-family: "Ubuntu", Arial, sans-serif;
     font-weight: 300; // Установаить 300 размер
   }
 }
@@ -47,7 +47,6 @@
 }
 
 @keyframes bounce {
-
   0%,
   100% {
     transform: translateY(0);
@@ -65,8 +64,14 @@
 }
 
 @media (max-width: 375px) {
-  .hero__content .hero__subtitle {
-    font-size: 20px;
+  .hero__content {
+    & h1 {
+      font-size: 60px;
+    }
+
+    & .hero__subtitle {
+      font-size: 20px;
+    }
   }
 }
 
