@@ -24,6 +24,22 @@
         line-height: 2;
         color: white;
         font-size: 25px;
+        overflow: hidden;
     }
 }
 
+@media (max-width: 425px) {
+    .containerComm {
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .containerComm h2 {
+        font-size: 100px;
+    }
+
+    .containerComm p {
+        font-size: 50px;
+    }
+}
