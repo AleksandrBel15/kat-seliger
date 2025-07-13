@@ -7,9 +7,12 @@ import Gallery from '../components/Gallery/Gallery.js';
 const gallery = new Gallery();
 import Reviews from '../components/Reviews/Reviews.js';
 const reviews = new Reviews();
+import Communication from '../components/Communication/Communication.js';
+const communication = new Communication();
 
 const app = document.getElementById('app');
 app.appendChild(hero.element);
 app.appendChild(about.element);
 app.appendChild(gallery.element);
 app.appendChild(reviews.element);
+app.appendChild(communication.element);
