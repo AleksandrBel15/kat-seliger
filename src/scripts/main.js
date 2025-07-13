@@ -9,6 +9,8 @@ import Reviews from '../components/Reviews/Reviews.js';
 const reviews = new Reviews();
 import Communication from '../components/Communication/Communication.js';
 const communication = new Communication();
+import Footer from '../components/footer/Footer.js';
+const footer = new Footer();
 
 const app = document.getElementById('app');
 app.appendChild(hero.element);
@@ -16,3 +18,4 @@ app.appendChild(about.element);
 app.appendChild(gallery.element);
 app.appendChild(reviews.element);
 app.appendChild(communication.element);
+app.appendChild(footer.element);

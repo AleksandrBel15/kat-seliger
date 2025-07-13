@@ -1,0 +1,51 @@
+@use "../../styles/base/reset";
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 150px;
+    background-color: #282525;
+    font-family: Arial;
+    overflow: hidden;
+}
+
+#blockFooter1 {
+    line-height: 2;
+
+    & p a {
+        color: #f7815f;
+        text-decoration: none;
+    }
+}
+
+#blockFooter2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.list {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 425px) {
+    .footer {
+        flex-direction: column;
+        height: 170px;
+    }
+
+    #blockFooter1 {
+        overflow: hidden;
+        line-height: 1.5;
+    }
+
+    #blockFooter2 {
+        overflow: hidden;
+    }
+
+}
