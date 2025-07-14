@@ -11,7 +11,7 @@ export default class Footer {
         footer.innerHTML = `
             <div id="blockFooter1">
                 <p>E-mail: kat-seliger@ya.ru</p>
-                <p>Telegam: <a href="https://t.me/katseliger" target="_blank">https://t.me/katseliger</a></p>
+                <p>Telegam: <a href="https://t.me/katseliger" target="_blank">t.me/katseliger</a></p>
                 <p>Телефон: 8-993-550-69-33</p>
             </div>
             <div id="blockFooter2">

@@ -85,3 +85,28 @@
     font-size: 35px;
   }
 }
+
+@media (max-height: 430px) {
+  .about {
+    gap: 10px
+  }
+
+  .about__cards {
+    flex-direction: row;
+    padding: 30px 0px;
+  }
+
+  .about__card {
+    font-size: 12px;
+    height: 100%;
+    width: 300px;
+  }
+}
+
+@media (max-height: 365px) {
+  .about__card {
+    font-size: 10px;
+    height: 100%;
+    width: 300px;
+  }
+}

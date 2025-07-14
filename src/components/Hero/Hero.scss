@@ -24,7 +24,7 @@
   & .hero__subtitle {
     font-size: 25px;
     font-family: "Ubuntu", Arial, sans-serif;
-    font-weight: 300; // Установаить 300 размер
+    font-weight: 300; // Установить 300 размер
   }
 }
 
@@ -63,6 +63,8 @@
   }
 }
 
+
+
 @media (max-width: 375px) {
   .hero__content {
     & h1 {
@@ -83,6 +85,18 @@
 
     & .hero__subtitle {
       font-size: 30px;
+    }
+  }
+}
+
+@media (max-height: 425px) {
+  .hero__content {
+    & h1 {
+      font-size: 40px;
+    }
+
+    & .hero__subtitle {
+      font-size: 20px;
     }
   }
 }
