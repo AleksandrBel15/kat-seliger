@@ -25,7 +25,7 @@ body {
 
 body::before {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/heroImages/mainImage.webp") no-repeat center center / cover;
+    url("/assets/heroImages/mainImage.webp") no-repeat center center / cover;
   content: " ";
   height: 100%;
   left: 0;
@@ -39,7 +39,7 @@ body::before {
 @media (max-width: 375px) {
   body::before {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../assets/heroImages/mainImage-mobile.webp") no-repeat center center /
+      url("/assets/heroImages/mainImage-mobile.webp") no-repeat center center /
         cover;
   }
 }
