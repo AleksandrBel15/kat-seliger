@@ -1,11 +1,14 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path'
+import compress from 'vite-plugin-compression'
 
 export default defineConfig({
     root: 'src', // Указываем, что исходники лежат в src/
+    publicDir: '../public',
     build: {
-        outDir: '../dist', // Папка для сборки
-        emptyOutDir: true
+        outDir: '../dist',
+        emptyOutDir: true,
+        copyPublicDir: true
     },
     server: {
         open: true // Автоматически открывать браузер
@@ -13,5 +16,6 @@ export default defineConfig({
     css: {
         devSourcemap: true, // Для отладки
         minify: true       // Минификация при сборке
-    }
+    },
+    plugins: [compress()]
 })

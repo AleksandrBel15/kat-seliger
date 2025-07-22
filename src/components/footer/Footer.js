@@ -15,27 +15,27 @@ export default class Footer {
                 <p>Телефон: 8-993-550-69-33</p>
             </div>
             <div id="blockFooter2">
-                <h5>Мы в соцсетях</h5>
+                <h6>Мы в соцсетях</h6>
                 <nav>
                     <ul class="list">
                         <li>
-                            <a href="https://vk.com/clubkatseliger" target="_blank">
-                                <img src="./../../assets/footerImages/vk.png" alt="Vk" loading="lazy">
+                            <a href="https://vk.com/clubkatseliger" target="_blank" aria-label="Вконтакте">
+                                <img src="./../../assets/footerImages/vk.webp" alt="Вконтакте" loading="lazy">
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/katseliger" target="_blank">
-                                <img src="./../../assets/footerImages/fb.png" alt="Facebook" loading="lazy">
+                            <a href="https://www.facebook.com/katseliger" target="_blank" aria-label="Фейсбук">
+                                <img src="./../../assets/footerImages/fb.webp" alt="Фейсбук" loading="lazy">
                             </a>
                         </li>
                         <li>
-                            <a href="https://instagram.com/kat_seliger" target="_blank">
-                                <img src="./../../assets/footerImages/insta.png" alt="Instagram" loading="lazy">
+                            <a href="https://instagram.com/kat_seliger" target="_blank" aria-label="Инстаграм">
+                                <img src="./../../assets/footerImages/insta.webp" alt="Инстаграм" loading="lazy">
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/channel/UCgSB69I0k9aXuqyiDiqFbNA" target="_blank">
-                                <img src="./../../assets/footerImages/yt.png" alt="YouTube" loading="lazy">
+                            <a href="https://www.youtube.com/channel/UCgSB69I0k9aXuqyiDiqFbNA" target="_blank" aria-label="Ютуб">
+                                <img src="./../../assets/footerImages/yt.webp" alt="Ютуб" loading="lazy">
                             </a>
                         </li>
                     </ul>

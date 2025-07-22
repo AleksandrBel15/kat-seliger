@@ -9,11 +9,12 @@
 }
 
 .containerComm {
-    font-family: 'Ubuntu', Arial, sans-serif;
+    font-family: 'Ubuntu';
     height: 80%;
     width: 80%;
     flex-direction: column;
     gap: 100px;
+    font-weight: bolder;
 
     & h2 {
         color: #ff6a00;

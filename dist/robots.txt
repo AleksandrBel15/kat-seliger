@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin/  # Закрыть служебные пути (если есть)
+Disallow: /tmp/    # Закрыть временные файлы
+
+Sitemap: http://localhost:5173/sitemap.xml  # Для разработки

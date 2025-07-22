@@ -10,8 +10,8 @@ export default class Communication {
         sectionComm.className = 'comm';
         sectionComm.innerHTML = `
             <div class="containerComm text-center flex-center">
-                <h2>Оставить заявку</h2>
-                <p>Позвоните нам по номеру или напишите: <br> +7 (993) 550-69-33 <br> kat-seliger@ya.ru</p>
+                <h2 class="ubuntu-medium">Оставить заявку</h2>
+                <p class="ubuntu-light">Позвоните нам по номеру или напишите: <br> +7 (993) 550-69-33 <br> kat-seliger@ya.ru</p>
             </div>
         `;  
 
