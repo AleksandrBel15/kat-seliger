@@ -1,7 +1,5 @@
 @use "./base/reset.scss" as *;
 @use "./base/utilities.scss" as *;
-@use "./base/variables.scss" as *;
-@use "../components/Hero/Hero.scss";
 
 .ubuntu-medium {
   font-family: "Ubuntu", sans-serif;
@@ -39,7 +37,6 @@ body::before {
 @media (max-width: 375px) {
   body::before {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/assets/heroImages/mainImage-mobile.webp") no-repeat center center /
-        cover;
+      url("/assets/heroImages/mainImage-mobile.webp") no-repeat center center / cover;
   }
 }

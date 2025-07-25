@@ -13,7 +13,7 @@ export default class Hero {
         sectionHero.innerHTML = `
             <div class = "hero__content text-center flex-center">
                 <h1 class="ubuntu-medium">Клуб активного <br> туризма <br> Селигер</h1>
-                <p class="hero__subtitle">Присоединяйтесь, мы вам рады!</p>
+                <p class="hero__subtitle ubuntu-light">Присоединяйтесь, мы вам рады!</p>
             </div>
         
             <button class="hero__scroll-down" aria-label="Прокрутить вниз">

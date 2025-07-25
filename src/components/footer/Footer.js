@@ -14,7 +14,7 @@ export default class Footer {
                 <p>Telegam: <a href="https://t.me/katseliger" target="_blank" aria-label="Телеграм">t.me/katseliger</a></p>
                 <p>Телефон: 8-993-550-69-33</p>
             </div>
-            <div id="blockFooter2">
+            <div id="blockFooter2" class="flex-center">
                 <h6>Мы в соцсетях</h6>
                 <nav>
                     <ul class="list">
