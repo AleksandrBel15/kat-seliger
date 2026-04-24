@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import { resolve } from 'path'
 
 export default defineConfig({
-    root: 'src', // Указываем, что исходники лежат в src/
+    root: './src', 
     publicDir: '../public',
     build: {
         outDir: '../dist',
@@ -10,10 +10,10 @@ export default defineConfig({
         copyPublicDir: true
     },
     server: {
-        open: true // Автоматически открывать браузер
+        open: true 
     },
     css: {
-        devSourcemap: true, // Для отладки
-        minify: true       // Минификация при сборке
+        devSourcemap: true, 
+        minify: true       
     },
 })
