@@ -3,9 +3,9 @@ import { resolve } from 'path'
 
 export default defineConfig({
     root: '.', 
-    publicDir: './public',
+    publicDir: '../public',
     build: {
-        outDir: './dist',
+        outDir: '../dist',
         emptyOutDir: true,
         copyPublicDir: true
     },
